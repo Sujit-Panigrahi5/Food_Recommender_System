@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        @keyframes move {
+            from{
+                left: 0rem;
+                /* border: 10px; */
+                background-color: #5f2cb7;
+                
+            }
+            to{
+                left: 40%;
+            }
+            
+        }
+        @keyframes move1 {
+            from{
+                right: 0rem;
+                background-color: #2cb753;
+
+            }
+            to{
+                right: 40%;
+            }
+        }
+
+        .firstpage{
+
+            background-image: url(./assets/bg_food.webp);
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body >
+    <div class="flex flex-col justify-center items-center gap-3 bg-slate-500 h-[100vh] w-full relative firstpage hidden" id="welcomsection">
+        <h1 class="text-2xl font-bold text-rose-800 italic">Welcome To Food Recommender System </h1>
+        <h1>Before proceedingfuther ,please help us with your preference:</h1>
+        <span class="text-2xl">You want to:</span>
+        <button class=" absolute top-[25.7rem] hover:border-4 rounded-lg border-cyan-400 bg-slate-500 w-72 text-lg hover:bg-purple-700  transition-all delay-[170] ease-in-out" id="looseweight">Loose Weight</button>
+        <button class=" absolute top-[28rem] hover:border-4 rounded-lg border-cyan-400 bg-slate-500 w-72 text-lg hover:bg-purple-700  transition-all delay-[170] ease-in-out" id="maintainweight">Maintain Weight</button>
+        <button class=" absolute top-[30.5rem] hover:border-4 rounded-lg border-cyan-400 bg-slate-500 w-72 text-lg hover:bg-purple-700  transition-all delay-[170] ease-in-out" id="gainweight">Gain Weight</button>
+    </div>
+
+    <div class="border-2 border-red-400 w-[50rem] ml-[22rem] gap-4">
+        
+        <div class="flex justify-center items-center">
+            <h1 class="text-2xl font-bold text-rose-800 italic">Food Recommender System</h1>
+        </div>
+
+        <p class="text-xl">In order to recommend healthy food recipes . Please fill details below :</p>
+
+        <div class="flex flex-row justify-around items-center">
+            <div class="flex flex-row justify-center items-center gap-4">
+                <h1 class="text-xl">Height : </h1>
+                <input type="number" name="" id="" placeholder="Feet" class="w-32 border-2 border-cyan-500 placeholder:pl-6 placeholder:text-xl">
+                <input type="number" name="" id="" placeholder="Inch" class="w-32 border-2 border-cyan-500 placeholder:pl-6 placeholder:text-xl">
+            </div>
+            <div class="flex flex-row justify-around items-center">
+                <h1>Weight :  </h1>
+                <input type="number" name="" id="" placeholder="Inch" class="w-32 border-2 border-cyan-500 placeholder:pl-6 placeholder:text-xl">
+            </div>
+        </div>
+
+        <div>
+
+        </div>
+
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+</html>
