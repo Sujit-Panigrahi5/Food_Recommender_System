@@ -9,6 +9,13 @@ const feet=document.getElementById("Feet")
 const inch=document.getElementById("inch")
 const agesection=document.getElementById("agesection")
 const heightsection=document.getElementById("heightsection")
+const notveryactive= document.getElementById("notveryactive")
+const active=document.getElementById("active")
+const veryactive=document.getElementById("veryactive")
+const veg=document.getElementById("veg")
+const nonveg=document.getElementById("nonveg")
+const both=document.getElementById("both")
+
 
 
 
@@ -21,20 +28,9 @@ gainweight.style.animation="move 1 2s"
 let feetcheck=false;
 let feetvalue=0;
 
-// feet.addEventListener("keypress",()=>{
-//     // if(feet.value==''){
-//     //     feetcheck=false;
-//     //     console.log("sujit")
-//     //     console.log(feet.value)
-//     // } else{
-//     //     console.log("panigrahi")
-//     // feetvalue=feet.value;
-//     // feetcheck=true;
-//     // }
 
 
-    
-// })
+
 function feetchange(){
 
    
@@ -68,7 +64,7 @@ function inchchange(){
 let weightcheck=false;
 let weightvalue=0;
 
-weight.addEventListener("keypress",(e)=>{
+weight.addEventListener("keypress",()=>{
     // if(weight.value==''){
     //     agesection.style.display="none"
         
@@ -96,16 +92,76 @@ weight.addEventListener("keypress",(e)=>{
     
 })
 
-
+let gendercheck=false;
 function check1(){
     female.style.backgroundColor="#4a4949"
     male.style.backgroundColor="#12bf43"
+    gendercheck=true;
 }
 function check2(){
     female.style.backgroundColor="#12bf43"
     male.style.backgroundColor="#4a4949"
+    gendercheck=true;
 }
 
+let takeactivevalue=""
+function activecheck1(){
+    notveryactive.style.backgroundColor="#12bf43"
+    active.style.backgroundColor="#4a4949"
+    veryactive.style.backgroundColor="#4a4949"
+    takeactivevalue="notveryactive"
+    document.getElementById("recipescatagori").style.display="block"
+    document.getElementById("recipescatagori").style.display="flex"
+}
+function activecheck2(){
+    active.style.backgroundColor="#12bf43"
+    notveryactive.style.backgroundColor="#4a4949"
+    veryactive.style.backgroundColor="#4a4949"
+    takeactivevalue="active"
+    document.getElementById("recipescatagori").style.display="flex"
+}
+function activecheck3(){
+    veryactive.style.backgroundColor="#12bf43"
+    notveryactive.style.backgroundColor="#4a4949"
+    active.style.backgroundColor="#4a4949"
+    takeactivevalue="veryactive"
+    document.getElementById("recipescatagori").style.display="flex"
+}
+
+agesection.addEventListener("keypress",()=>{
+    if(gendercheck == true){
+        document.getElementById("activeinfo").style.display="block"
+        document.getElementById("activeinfo").style.display="flex"
+    } else{
+        document.getElementById("activeinfo").style.display="none"
+    }
+})
+
+let checkrecipescatagori=""
+
+function vegcheck(){
+    veg.style.backgroundColor="#12bf43"
+    nonveg.style.backgroundColor="#4a4949"
+    both.style.backgroundColor="#4a4949"
+    checkrecipescatagori="veg"
+    document.getElementById("seeitem").style.display="block"
+}
+
+function nonvegcheck(){
+    nonveg.style.backgroundColor="#12bf43"
+    veg.style.backgroundColor="#4a4949"
+    both.style.backgroundColor="#4a4949"
+    checkrecipescatagori="nonveg"
+    document.getElementById("seeitem").style.display="block"
+}
+
+function bothcheck(){
+    both.style.backgroundColor="#12bf43"
+    veg.style.backgroundColor="#4a4949"
+    nonveg.style.backgroundColor="#4a4949"
+    checkrecipescatagori="both"
+    document.getElementById("seeitem").style.display="block"
+}
 
 
 
