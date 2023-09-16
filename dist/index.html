@@ -30,9 +30,32 @@
             }
         }
 
+        @keyframes showbar {
+            from{
+                width: 0rem;
+            }
+            to{
+                width: 4rem;
+            }
+        }
+
+        @keyframes showbar1 {
+            from{
+                width: 0rem;
+            }
+            to{
+                width: 3.5rem;
+            }
+        }
+
         .firstpage{
 
             background-image: url(./assets/bg_food.webp);
+            background-position: center;
+            background-size: cover;
+        }
+        .mainseciton{
+            background-image: url(./assets/pexels-julie-aagaard-1426715.jpg);
             background-position: center;
             background-size: cover;
         }
@@ -41,7 +64,7 @@
     </style>
 </head>
 <body >
-    <div class="flex flex-col  justify-center items-center gap-3 bg-slate-500 h-[100vh] w-full relative firstpage " id="welcomsection">
+    <div class="flex flex-col  justify-center items-center gap-3 bg-slate-500 h-[100vh] w-full relative firstpage  hidden" id="welcomsection">
         <h1 class=" text-xl lg:text-2xl font-bold text-rose-800 italic ">Welcome To Food Recommender System </h1>
         <h1 class="ml-2">Before proceedingfuther ,please help us with your preference:</h1>
         <span class="text-2xl">You want to:</span>
@@ -141,6 +164,58 @@
         </div>
 
         <button class="bg-[#4a4949] ml-32 lg:ml-80 hidden hover:bg-cyan-500 w-32 py-3 text-center rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="seeitem">Check Item</button>
+    </div>
+
+
+    <div class="flex flex-col justify-start items-center w-full h-full ">
+
+        <div class="flex flex-col justify-between items-center  w-full gap-12 lg:gap-14 mainseciton py-5">
+            <div class="flex flex-col gap-4 lg:flex-row justify-around items-center w-full h-full py-4 ">
+                
+                <!-- home,recipes,about section -->
+
+                <div class="flex flex-row justify-between items-center gap-10">
+                    <span class="text-xl italic flex flex-col justify-center items-center cursor-pointer" id="homebuttom" onmouseover="showbar('homebar')" onmouseout="donnotshowbar('homebar')">
+                       <span class="hover:text-cyan-700">Home</span>
+                        <hr class="w-14 hidden h-[0.15rem] bg-red-500" id="homebar">
+                    </span>
+
+                    <span class="text-xl italic flex flex-col justify-center items-center cursor-pointer" id="recipesbuttom" onmouseover="showbar('recipesbar')" onmouseout="donnotshowbar('recipesbar')">
+                        <span class="hover:text-cyan-700">Recipes</span>
+                        <hr class="w-16 hidden h-[0.15rem] bg-red-500" id="recipesbar">
+                    </span>
+
+                    <span class="text-xl italic flex flex-col justify-center items-center cursor-pointer" id="aboutbuttom" onmouseover="showbar('aboutbar')" onmouseout="donnotshowbar('aboutbar')" >
+                        <span class="hover:text-cyan-700">About</span>
+                        <hr class="w-14 hidden h-[0.15rem] bg-red-500" id="aboutbar">
+                    </span>
+                </div>
+
+                <!-- edit your preference -->
+
+                <div class=" text-xl border-2 border-cyan-400 bg-slate-300 py-2 px-2 cursor-pointer hover:text-slate-100 hover:bg-slate-500 rounded-full">
+                    Edit your preference
+                </div>
+            </div>
+
+            <div class="text-2xl italic">
+                Food Recommender System
+            </div>
+
+            <div class="border-2 border-cyan-600 flex w-72 lg:w-96 rounded-r-full rounded-l-full pl-2 hover:border-4 hover:border-cyan-600 transition-all delay-25 ease-in-out bg-transparent h-8">
+                <input type="text" name="" id="searchitem" placeholder="Search item" class=" text-xl text-[#140a24] w-[85%] outline-none bg-transparent  placeholder:text-[#1a1a72] placeholder:text-xl">
+                <label for="searchitem" class=" cursor-pointer h-full border-l-2 border-purple-600 text-center w-[15%] hover:bg-slate-600  rounded-r-full">
+                    <i class="fa-solid fa-magnifying-glass outline-none scale-125"></i>
+                </label>
+                
+            </div>
+        </div>
+
+
+        <div class="bg-red-700">
+            <div></div>
+            <div></div>
+        </div>
     </div>
 
 </body>

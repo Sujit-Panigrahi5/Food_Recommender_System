@@ -179,3 +179,17 @@ function backpage(){
    
 }
 
+
+function showbar(idofbar){
+    if(idofbar == "recipesbar"){
+        document.getElementById(idofbar).style.display="block"
+        document.getElementById(idofbar).style.animation="showbar 1 0.3s"
+    }
+    document.getElementById(idofbar).style.display="block"
+    document.getElementById(idofbar).style.animation="showbar1 1 0.3s"
+}
+
+function donnotshowbar(idofbar){
+    document.getElementById(idofbar).style.display="none"
+}
+
