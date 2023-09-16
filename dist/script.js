@@ -193,3 +193,70 @@ function donnotshowbar(idofbar){
     document.getElementById(idofbar).style.display="none"
 }
 
+
+let color=[
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+]
+function colorchange(){
+    let finalcolor="#"
+    for(let i=0;i<6;i++){
+        finalcolor+= color[setcolor()]
+    }
+    document.getElementById("edit").style.borderColor=finalcolor
+  document.getElementById("foodrecommender").style.color=finalcolor;
+
+
+  document.getElementById("searchdiv").style.borderColor=finalcolor;
+  return finalcolor;
+
+}
+
+function setcolor(){
+    
+    return Math.floor(Math.random()*color.length);
+
+}
+setInterval(colorchange,2000)
+
+let vegitem=[
+    "./assets/looseweight/above10year/veg/cauliflower-dajita-skillet.webp",
+
+    "./assets/looseweight/above10year/veg/chickpea-pesto-burgers.webp",
+
+    "./assets/looseweight/above10year/veg/chipotle-tofu-tacos.webp",
+
+
+    "./assets/looseweight/above10year/veg/easy-peanut-noodles.webp",
+
+    "./assets/looseweight/above10year/veg/lentil_Blwls_with Fried Eggs and Greens.webp",
+
+    "./assets/looseweight/above10year/veg/mushroom-french-dip.webp",
+
+    "./assets/looseweight/above10year/veg/pasta-and-white-bean-soup.webp",
+
+    "./assets/looseweight/above10year/veg/roasted-brussels-sprouts-pasta-with-lemon.webp",
+
+    "./assets/looseweight/above10year/veg/sweet-potato-black-bean-tacos.webp",
+
+    "./assets/looseweight/above10year/veg/vegetarian-mushroom-paprikash.webp"
+
+]
+
+function puporalitem(){
+
+}
+
