@@ -92,6 +92,13 @@ weight.addEventListener("keypress",()=>{
     
 })
 
+let value="";
+function gotoinfopage(value1){
+    value=value1;
+    document.getElementById("welcomsection").style.display="none"
+    document.getElementById("infosection").style.display="block"
+}
+
 let gendercheck=false;
 function check1(){
     female.style.backgroundColor="#4a4949"
@@ -164,5 +171,11 @@ function bothcheck(){
 }
 
 
-
+function backpage(){
+    console.log("sujit")
+ document.getElementById("infosection").style.display="none"
+ document.getElementById("welcomsection").style.display="block"
+ document.getElementById("welcomsection").style.display="flex"
+   
+}
 

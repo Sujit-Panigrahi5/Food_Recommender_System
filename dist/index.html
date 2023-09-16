@@ -36,37 +36,50 @@
             background-position: center;
             background-size: cover;
         }
+
+
     </style>
 </head>
 <body >
-    <div class="flex flex-col justify-center items-center gap-3 bg-slate-500 h-[100vh] w-full relative firstpage " id="welcomsection">
-        <h1 class="text-2xl font-bold text-rose-800 italic">Welcome To Food Recommender System </h1>
-        <h1>Before proceedingfuther ,please help us with your preference:</h1>
+    <div class="flex flex-col  justify-center items-center gap-3 bg-slate-500 h-[100vh] w-full relative firstpage " id="welcomsection">
+        <h1 class=" text-xl lg:text-2xl font-bold text-rose-800 italic ">Welcome To Food Recommender System </h1>
+        <h1 class="ml-2">Before proceedingfuther ,please help us with your preference:</h1>
         <span class="text-2xl">You want to:</span>
-        <button class=" absolute top-[25.7rem] hover:border-4 rounded-lg border-cyan-400 bg-slate-500 w-72 text-lg hover:bg-purple-700  transition-all delay-[170] ease-in-out" id="looseweight">Loose Weight</button>
-        <button class=" absolute top-[28rem] hover:border-4 rounded-lg border-cyan-400 bg-slate-500 w-72 text-lg hover:bg-purple-700  transition-all delay-[170] ease-in-out" id="maintainweight">Maintain Weight</button>
-        <button class=" absolute top-[30.5rem] hover:border-4 rounded-lg border-cyan-400 bg-slate-500 w-72 text-lg hover:bg-purple-700  transition-all delay-[170] ease-in-out" id="gainweight">Gain Weight</button>
+        <button class=" absolute  top-[30.5rem] lg:top-[25.7rem] hover:border-4 rounded-lg border-cyan-400 bg-slate-500 w-72 text-lg hover:bg-purple-700  transition-all delay-[170] ease-in-out" id="looseweight" onclick="gotoinfopage('loosweight')">Loose Weight</button>
+
+
+        <button class=" absolute top-[33rem] lg:top-[28rem] hover:border-4 rounded-lg border-cyan-400 bg-slate-500 w-72 text-lg hover:bg-purple-700  transition-all delay-[170] ease-in-out" id="maintainweight" onclick="gotoinfopage('MaintainWeight')">Maintain Weight</button>
+
+
+        <button class=" absolute top-[35.5rem] lg:top-[30.5rem] hover:border-4 rounded-lg border-cyan-400 bg-slate-500 w-72 text-lg hover:bg-purple-700  transition-all delay-[170] ease-in-out" id="gainweight" onclick="gotoinfopage('Gain Weight')">Gain Weight</button>
+
     </div>
 
-    <div class="border-2 border-purple-500 rounded-lg p-4 w-[50rem] ml-[22rem] flex flex-col gap-4 mt-7 bg-slate-400 relative " id="infosection">
-        <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512" class="cursor-pointer fill-slate-500 hover:fill-slate-700 absolute"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9L117.5 269.8c-3.5-3.8-5.5-8.7-5.5-13.8s2-10.1 5.5-13.8l99.9-107.1c4.2-4.5 10.1-7.1 16.3-7.1c12.3 0 22.3 10 22.3 22.3l0 57.7 96 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32l-96 0 0 57.7c0 12.3-10 22.3-22.3 22.3c-6.2 0-12.1-2.6-16.3-7.1z"/></svg>
+    <div class="border-2 border-purple-500 rounded-lg p-4 w-full lg:w-[50rem] lg:ml-[22rem] flex flex-col gap-6 mt-7 bg-slate-400  hidden" id="infosection">
+
+
+        <div onclick="backpage()" class="border-2 border-cyan-500 w-7 h-7 cursor-pointer text-center rounded-full bg-slate-500 hover:bg-slate-700">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"          class="cursor-pointer fill-slate-500 hover:fill-slate-700 absolute" id="leftarrow1" ><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9L117.5 269.8c-3.5-3.8-5.5-8.7-5.5-13.8s2-10.1 5.5-13.8l99.9-107.1c4.2-4.5 10.1-7.1 16.3-7.1c12.3 0 22.3 10 22.3 22.3l0 57.7 96 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32l-96 0 0 57.7c0 12.3-10 22.3-22.3 22.3c-6.2 0-12.1-2.6-16.3-7.1z"/></svg> -->
+
+            <i class="fa-solid fa-chevron-left"></i>
+        </div>
         
         <div class="flex justify-center items-center">
 
-            <h1 class="text-2xl font-bold text-rose-800 italic">Food Recommender System</h1>
+            <h1 class=" text-xl lg:text-2xl font-bold text-rose-800 italic">Food Recommender System</h1>
         </div>
 
         <p class="text-xl">In order to recommend healthy food recipes . Please fill details below :</p>
 
-        <div class="flex flex-row justify-around items-center">
+        <div class="flex flex-col lg:flex-row justify-around items-center gap-2">
 
             <!-- height section  -->
-            <div class="flex flex-row justify-center items-center gap-4" id="heightsection">
+            <div class="flex flex-row justify-center items-center gap-3  " id="heightsection">
                 <h1 class="text-xl">Height : </h1>
 
-                <input type="number" name="" id="Feet" placeholder="Feet" class="w-32 border-2 border-cyan-500 placeholder:pl-6 placeholder:text-xl outline-none" onchange="feetchange()" >
+                <input type="number" name="" id="Feet" placeholder="Feet" class=" w-20 lg:w-32 border-2 border-cyan-500 placeholder:pl-6 placeholder:text-xl outline-none" onchange="feetchange()" >
 
-                <input type="number" name="" id="inch" placeholder="Inch" class="w-32 border-2 border-cyan-500 placeholder:pl-6 placeholder:text-xl outline-none" onchange="inchchange()">
+                <input type="number" name="" id="inch" placeholder="Inch" class="w-20 lg:w-32 border-2 border-cyan-500 placeholder:pl-6 placeholder:text-xl outline-none" onchange="inchchange()">
             </div>
             <!-- weight secition -->
             <div class="flex flex-row justify-around items-center "  >
@@ -77,7 +90,7 @@
 
         </div>
 
-        <div class="flex flex-row justify-around items-center gap-32 hidden " id="agesection">
+        <div class="flex my-3 flex-col lg:flex-row justify-around items-center gap-3 ml-[-27px]  lg:gap-32 hidden " id="agesection">
             <div class="flex flex-row justify-center items-center gap-4">
                 <h1 class="text-xl">Gender : </h1>
 
@@ -99,7 +112,7 @@
             </div>
         </div>
 
-        <div class=" flex flex-row justify-start items-start gap-3 hidden" id="activeinfo">
+        <div class=" flex my-3 flex-row justify-start items-start gap-3 hidden" id="activeinfo">
             <div class="">
                 How active you are :
             </div>
@@ -116,7 +129,7 @@
         </div>
 
         
-        <div class="flex felx-row justify-start items-center gap-4 hidden" id="recipescatagori">
+        <div class="flex my-3 lg:felx-row flex-col justify-start items-center gap-4 hidden" id="recipescatagori">
             <div>Recipes preference : </div>
             <div class="flex justify-start items-center gap-3">
                 <div class="bg-[#4a4949] w-32 py-3 text-center rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="veg" onclick="vegcheck()">veg.</div>
@@ -127,7 +140,7 @@
             </div>
         </div>
 
-        <button class="bg-[#4a4949] ml-80 hidden hover:bg-cyan-500 w-32 py-3 text-center rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="seeitem">Check Item</button>
+        <button class="bg-[#4a4949] ml-32 lg:ml-80 hidden hover:bg-cyan-500 w-32 py-3 text-center rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="seeitem">Check Item</button>
     </div>
 
 </body>
