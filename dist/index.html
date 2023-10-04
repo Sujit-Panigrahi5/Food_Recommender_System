@@ -58,8 +58,11 @@
         .firstpage{
 
             background-image: url(./assets/pexels-asad-photo-maldives-169191.jpg);
+            /* background-image: url(./assets/food.webp); */
             background-position: center;
             background-size: cover;
+           
+            
         }
         .mainseciton{
             background-image: url(./assets/pexels-julie-aagaard-1426715.jpg);
@@ -70,8 +73,14 @@
         .gridforitem{
             grid-template-columns: 1fr 4.3fr;
         }
-        #infosection{
+        .syx{
             background-image: url(./assets/pexels-nicole-michalou-5779181.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .showsideimg{
+            background-image: url(./assets/looseweight/1to6year/veg/Grilled-Chicken-Tenders.jpg);
             background-position: center;
             background-size: cover;
         }
@@ -80,8 +89,9 @@
 
     </style>
 </head>
-<body >
-    <div class="flex flex-col  justify-center items-center gap-3 bg-slate-500 h-[100vh] w-full relative firstpage " id="welcomsection">
+<body class=" ">
+    
+    <div class="flex flex-col  justify-center items-center gap-3 firstpage h-[100vh] w-[full] relative  " id="welcomsection">
         <h1 class=" text-xl lg:text-2xl font-bold text-rose-800 italic ">Welcome To Food Recommender System </h1>
         <h1 class="ml-2">Before proceedingfuther ,please help us with your preference:</h1>
         <span class="text-2xl">You want to:</span>
@@ -94,111 +104,113 @@
         <button class=" absolute top-[35.5rem] lg:top-[30.5rem] hover:border-4 rounded-lg border-cyan-400 bg-slate-500 w-72 text-lg hover:bg-purple-700  transition-all delay-[170] ease-in-out" id="gainweight" onclick="gotoinfopage('Gain Weight')">Gain Weight</button>
 
     </div>
+   
+    <div class="syx w-full h-[100vh] hidden  " id="infosection">
+        <div class="border-2 border-purple-500 rounded-lg  p-4 w-full lg:w-[50rem] lg:ml-[22rem] flex flex-col gap-4  bg-slate-400   text-[#f5ff3b] bg-opacity-75 " >
 
-    <div class="border-2 border-purple-500 rounded-lg p-4 w-full lg:w-[50rem] lg:ml-[22rem] flex flex-col gap-6 mt-7 bg-slate-400  hidden text-[#f5ff3b]" id="infosection">
+
+            <div onclick="backpage()" class="border-2 border-cyan-500 w-7 h-7 cursor-pointer text-center rounded-full bg-slate-500 hover:bg-slate-700">
+            
+
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            
+            <div class="flex justify-center items-center">
+
+                <h1 class=" text-xl lg:text-2xl font-bold text-[#f5ff3b] italic">Food Recommender System</h1>
+            </div>
+
+            <p class="text-xl">In order to recommend healthy food recipes . Please fill details below :</p>
 
 
-        <div onclick="backpage()" class="border-2 border-cyan-500 w-7 h-7 cursor-pointer text-center rounded-full bg-slate-500 hover:bg-slate-700">
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"          class="cursor-pointer fill-slate-500 hover:fill-slate-700 absolute" id="leftarrow1" ><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9L117.5 269.8c-3.5-3.8-5.5-8.7-5.5-13.8s2-10.1 5.5-13.8l99.9-107.1c4.2-4.5 10.1-7.1 16.3-7.1c12.3 0 22.3 10 22.3 22.3l0 57.7 96 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32l-96 0 0 57.7c0 12.3-10 22.3-22.3 22.3c-6.2 0-12.1-2.6-16.3-7.1z"/></svg> -->
+            <!-- height and weight section -->
+            <div class="flex flex-col lg:flex-row justify-around items-center gap-2">
 
-            <i class="fa-solid fa-chevron-left"></i>
+                <!-- height section  -->
+                <div class="flex flex-row justify-center items-center gap-3   " id="heightsection">
+                    <h1 class="text-xl">Height : </h1>
+
+                    <input type="number" name="" id="Feet" placeholder="Feet" class=" w-20 lg:w-32 border-2 border-cyan-500 placeholder:pl-6 placeholder:text-xl outline-none text-black" onchange="feetchange()" >
+
+                    <input type="number" name="" id="inch" placeholder="Inch" class="w-20 lg:w-32 border-2 border-cyan-500 placeholder:pl-6 placeholder:text-xl outline-none text-black" onchange="inchchange()">
+                </div>
+                <!-- weight secition -->
+                <div class="flex flex-row justify-around items-center text-black  "  >
+                    <h1 class="text-xl text-[#f5ff3b]">Weight :  </h1>
+                    
+                    <input type="number" name="" id="weight" placeholder="Weight in kg" class=" border-2 border-cyan-500 placeholder:pl-6 placeholder:text-xl ml-4 outline-none text-black" >
+                </div>
+
+            </div>
+
+            <div class="flex my-2 flex-col lg:flex-row justify-around items-center gap-3 ml-[-27px]  lg:gap-32 hidden " id="agesection">
+
+                <!-- male and female section -->
+
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <h1 class="text-xl">Gender : </h1>
+
+                    <!-- male -->
+                <div class="bg-[#4a4949] px-4 py-2 rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="male" onclick="check1()">
+                    male
+                </div>
+
+                <!-- female -->
+                <div class="bg-[#4a4949] px-4 py-2 rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="female" onclick="check2()">
+                    female
+                </div>
+                </div>
+
+                <!-- age section -->
+
+                <div class="flex flex-row justify-around items-center">
+                    <h1 class="text-xl">age :  </h1>
+                    <input type="number" name="" id="age" placeholder="Age in years" class=" border-2 border-cyan-500 placeholder:pl-6 placeholder:text-xl ml-4 outline-none text-black">
+                </div>
+            </div>
+
+            <div class=" flex my-2 flex-row justify-start items-start gap-3 hidden" id="activeinfo">
+                <div class="">
+                    How active you are :
+                </div>
+
+                <div class="flex flex-col justify-start items-start gap-3">
+                    <div class="bg-[#4a4949] w-32 py-3 text-center rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="notveryactive" onclick="activecheck1()">Not very Active </div>
+
+
+                    <div class="bg-[#4a4949] w-32 py-3 text-center  rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="active" onclick="activecheck2()"> Active</div>
+
+
+                    <div class="bg-[#4a4949] w-32 py-3 text-center  rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="veryactive" onclick="activecheck3()"> Very Active</div>
+
+                </div>
+            </div>
+
+            
+            <div class="flex my-2 lg:felx-row flex-col justify-start items-center gap-4 hidden" id="recipescatagori">
+                <div>Recipes preference : </div>
+                <div class="flex justify-start items-center gap-3">
+                    <div class="bg-[#4a4949] w-32 py-3 text-center rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="veg" onclick="vegcheck()">veg.</div>
+
+                    <div class="bg-[#4a4949] w-32 py-3 text-center rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="nonveg" onclick="nonvegcheck()">Non-veg</div>
+
+                    <div class="bg-[#4a4949] w-32 py-3 text-center rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="both" onclick="bothcheck()">Both</div>
+                </div>
+            </div>
+
+            <button class="bg-[#4a4949] ml-32 lg:ml-80 hidden hover:bg-cyan-500 w-32 py-3 text-center rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="seeitem" onclick="showhomepage()">Check Item</button>
         </div>
-        
-        <div class="flex justify-center items-center">
-
-            <h1 class=" text-xl lg:text-2xl font-bold text-[#f5ff3b] italic">Food Recommender System</h1>
-        </div>
-
-        <p class="text-xl">In order to recommend healthy food recipes . Please fill details below :</p>
-
-
-         <!-- height and weight section -->
-        <div class="flex flex-col lg:flex-row justify-around items-center gap-2">
-
-            <!-- height section  -->
-            <div class="flex flex-row justify-center items-center gap-3   " id="heightsection">
-                <h1 class="text-xl">Height : </h1>
-
-                <input type="number" name="" id="Feet" placeholder="Feet" class=" w-20 lg:w-32 border-2 border-cyan-500 placeholder:pl-6 placeholder:text-xl outline-none text-black" onchange="feetchange()" >
-
-                <input type="number" name="" id="inch" placeholder="Inch" class="w-20 lg:w-32 border-2 border-cyan-500 placeholder:pl-6 placeholder:text-xl outline-none text-black" onchange="inchchange()">
-            </div>
-            <!-- weight secition -->
-            <div class="flex flex-row justify-around items-center text-black  "  >
-                <h1 class="text-xl">Weight :  </h1>
-                
-                <input type="number" name="" id="weight" placeholder="Weight in kg" class=" border-2 border-cyan-500 placeholder:pl-6 placeholder:text-xl ml-4 outline-none text-black" >
-            </div>
-
-        </div>
-
-        <div class="flex my-3 flex-col lg:flex-row justify-around items-center gap-3 ml-[-27px]  lg:gap-32 hidden " id="agesection">
-
-            <!-- male and female section -->
-
-            <div class="flex flex-row justify-center items-center gap-4">
-                <h1 class="text-xl">Gender : </h1>
-
-                <!-- male -->
-               <div class="bg-[#4a4949] px-4 py-2 rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="male" onclick="check1()">
-                male
-               </div>
-
-               <!-- female -->
-               <div class="bg-[#4a4949] px-4 py-2 rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="female" onclick="check2()">
-                female
-               </div>
-            </div>
-
-            <!-- age section -->
-
-            <div class="flex flex-row justify-around items-center">
-                <h1 class="text-xl">age :  </h1>
-                <input type="number" name="" id="age" placeholder="Age in years" class=" border-2 border-cyan-500 placeholder:pl-6 placeholder:text-xl ml-4 outline-none text-black">
-            </div>
-        </div>
-
-        <div class=" flex my-3 flex-row justify-start items-start gap-3 hidden" id="activeinfo">
-            <div class="">
-                How active you are :
-            </div>
-
-            <div class="flex flex-col justify-start items-start gap-3">
-                <div class="bg-[#4a4949] w-32 py-3 text-center rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="notveryactive" onclick="activecheck1()">Not very Active </div>
-
-
-                <div class="bg-[#4a4949] w-32 py-3 text-center  rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="active" onclick="activecheck2()"> Active</div>
-
-
-                <div class="bg-[#4a4949] w-32 py-3 text-center  rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="veryactive" onclick="activecheck3()"> Very Active</div>
-
-            </div>
-        </div>
-
-        
-        <div class="flex my-3 lg:felx-row flex-col justify-start items-center gap-4 hidden" id="recipescatagori">
-            <div>Recipes preference : </div>
-            <div class="flex justify-start items-center gap-3">
-                <div class="bg-[#4a4949] w-32 py-3 text-center rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="veg" onclick="vegcheck()">veg.</div>
-
-                <div class="bg-[#4a4949] w-32 py-3 text-center rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="nonveg" onclick="nonvegcheck()">Non-veg</div>
-
-                <div class="bg-[#4a4949] w-32 py-3 text-center rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="both" onclick="bothcheck()">Both</div>
-            </div>
-        </div>
-
-        <button class="bg-[#4a4949] ml-32 lg:ml-80 hidden hover:bg-cyan-500 w-32 py-3 text-center rounded-lg cursor-pointer hover:border-2 border-cyan-300 transition-all delay-150" id="seeitem" onclick="showhomepage()">Check Item</button>
     </div>
 
 
     <div class=" flex flex-col justify-start items-center w-full h-[100vh] min-h-screen recipesitem border-2 border-red-700 hidden" id="manusection">
-        <div onclick="backpage1()" class="border-2 border-cyan-500 w-7 h-7 cursor-pointer text-center rounded-full bg-slate-500 hover:bg-slate-700 absolute top-2 left-2">
+        <div onclick="backpage1()" class="border-2 border-cyan-500 w-7 h-7 cursor-pointer text-center rounded-full bg-slate-500 hover:bg-slate-700 absolute top-2 left-2  ">
             <!-- <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"          class="cursor-pointer fill-slate-500 hover:fill-slate-700 absolute" id="leftarrow1" ><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9L117.5 269.8c-3.5-3.8-5.5-8.7-5.5-13.8s2-10.1 5.5-13.8l99.9-107.1c4.2-4.5 10.1-7.1 16.3-7.1c12.3 0 22.3 10 22.3 22.3l0 57.7 96 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32l-96 0 0 57.7c0 12.3-10 22.3-22.3 22.3c-6.2 0-12.1-2.6-16.3-7.1z"/></svg> -->
 
             <i class="fa-solid fa-chevron-left"></i>
         </div>
 
-        <div class="flex flex-col justify-between items-center  w-full h-[40%] gap-12 lg:gap-10 mainseciton py-5">
+        <div class="flex flex-col justify-between items-center  w-full h-[40%] gap-12 lg:gap-10 mainseciton py-5 ">
             <div class="flex flex-col gap-4 lg:flex-row justify-around items-center w-full h-full py-4 ">
                 
                 <!-- home,recipes,about section -->
@@ -266,12 +278,62 @@
                 <img src="./assets/looseweight/above10year/veg/vegetarian-mushroom-paprikash.webp" alt="" class="cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img8" onclick="gotonextpage(id)">
 
                 <img src="./assets/looseweight/above10year/veg/vegetarian-mushroom-paprikash.webp" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img9" onclick="gotonextpage(id)">
+
+
+                <!-- for both case  -->
+                
+                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img10" onclick="gotonextpage(id)">
+
+                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img11" onclick="gotonextpage(id)">
+
+                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600  " id="img12" onclick="gotonextpage(id)">
+
+
+                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600   " id="img13" onclick="gotonextpage(id)">
+
+                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img14" onclick="gotonextpage(id)">
+
+                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600  " id="img15" onclick="gotonextpage(id)">
+
+                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600  " id="img16" onclick="gotonextpage(id)">
+
+                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img17" onclick="gotonextpage(id)">
+
+
+                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img18" onclick="gotonextpage(id)">
+
+
+                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600  " id="img19" onclick="gotonextpage(id)">
                 
             </div>
 
 
 
-            <div class="bg-green-500"></div>
+            <div class="bg-green-500 overflow-scroll">
+
+                <h1 class="text-2xl  text-black">Based on the data provided by you ,our food Recommender System has generatd following recipes </h1>
+
+                <div class="flex flex-col justify-start items-center w-[100%] h-[20rem] ">
+                    <div class="showsideimg w-full h-[50%] ">
+
+                        <!-- no  -->
+                        <span>1</span>
+                        <!-- calories  -->
+                        <div>
+
+                        </div>
+                    </div>
+
+                    <!-- recipes name and ingredient name  -->
+                    <div >
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
     </div>
 
