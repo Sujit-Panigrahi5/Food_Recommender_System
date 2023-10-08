@@ -1706,4 +1706,350 @@ function backpage1(){
     document.getElementById("infosection").style.display="block"
 }
 
+// let a=cookitem[0][0][0][0].ingredients.split(",");
+// console.log(a)
+
+// document.getElementById("recipesname").textContent=cookitem[0][0][0][0].name;
+
+// // cookitem[0][0][0][0].ingredients.split(",").forEach((item)=>{
+// //     document.getElementById("ingredient").textContent=item;
+// //     console.log(item)
+// // });
+
+// document.getElementById("ingredient").textContent=cookitem[0][0][0][0].ingredients;
+
+// document.getElementById("")
+
+function addallid(){
+  
+    document.getElementById("addnewimg").style.display="block";
+
+    if(value == "loosweight"){
+        if(age.value >= 1 && age.value  <= 10){
+
+            if(checkrecipescatagori == "veg"){
+                console.log(value,age.value,checkrecipescatagori)
+
+                cookitem[0][0][0].forEach((item,index)=>{
+
+                    document.getElementById(`img1${index}`).style.display="none";
+
+                    document.getElementById(`img${index}`).src=item.itemimg;
+
+                    // document.getElementById(`img${index}`).id=`img0${index}`;
+
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+
+                })
+
+            } else if(checkrecipescatagori == "nonveg") {
+                cookitem[0][0][1].forEach((item,index)=>{
+
+                    document.getElementById(`img1${index}`).style.display="none";
+                    // item img add in home page 
+
+                    document.getElementById(`img${index}`).src=item.itemimg;
+
+                    // document.getElementById(`img${index}`).id=`img0${index}`;
+
+                    // click to show img in recipes page
+
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+
+                })
+
+            } else{
+
+                console.log("sujit")
+                cookitem[0][0][0].forEach((item,index)=>{
+                    document.getElementById(`img${index}`).src=item.itemimg;
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+                })
+                cookitem[0][0][1].forEach((item,index)=>{
+
+                    document.getElementById(`img1${index}`).style.display="bolck";
+
+                    document.getElementById(`img1${index}`).src=item.itemimg;
+
+                    
+
+                    document.getElementById(`img1${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+
+
+                })
+            }
+
+        }else{
+
+            if(checkrecipescatagori == "veg"){
+
+                cookitem[0][1][0].forEach((item,index)=>{
+                    document.getElementById(`img1${index}`).style.display="none";
+
+
+                    document.getElementById(`img${index}`).src=item.itemimg;
+
+                    // document.getElementById(`img${index}`).id=`img0${index}`;
+
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+
+                })
+
+            } else if(checkrecipescatagori == "nonveg"){
+                cookitem[0][1][1].forEach((item,index)=>{
+
+                    // item img add in home page 
+
+                    document.getElementById(`img${index}`).src=item.itemimg;
+
+                    // document.getElementById(`img${index}`).id=`img0${index}`;
+
+                    // click to show img in recipes page
+
+                    document.getElementById(`img0${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+
+                })
+
+            } else{
+
+                cookitem[0][1][0].forEach((item,index)=>{
+                    document.getElementById(`img${index}`).src=item.itemimg;
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+                })
+                cookitem[0][1][1].forEach((item,index)=>{
+                    document.getElementById(`img1${index}`).style.display="bolck";
+                    document.getElementById(`img1${index}`).src=item.itemimg;
+
+                    document.getElementById(`img1${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+                })
+            }
+
+        } 
+    } else if(value == "MaintainWeight"){
+        if(age.value >= 1 && age.value  <= 10){
+            if(checkrecipescatagori == "veg"){
+
+                cookitem[1][0][0].forEach((item,index)=>{
+
+                    document.getElementById(`img1${index}`).style.display="none";
+                    document.getElementById(`img${index}`).src=item.itemimg;
+
+                    // document.getElementById(`img${index}`).id=`img0${index}`;
+
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+
+                })
+
+            } else if(checkrecipescatagori == "nonveg") {
+                cookitem[1][0][1].forEach((item,index)=>{
+
+                    document.getElementById(`img1${index}`).style.display="none";
+                    // item img add in home page 
+
+                    document.getElementById(`img${index}`).src=item.itemimg;
+
+                    // document.getElementById(`img${index}`).id=`img0${index}`;
+
+                    // click to show img in recipes page
+
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+
+                })
+
+            } else{
+                cookitem[1][0][0].forEach((item,index)=>{
+                    document.getElementById(`img${index}`).src=item.itemimg;
+
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+                })
+                cookitem[1][0][1].forEach((item,index)=>{
+                    document.getElementById(`img1${index}`).style.display="bolck";
+                    document.getElementById(`img1${index}`).src=item.itemimg
+                    document.getElementById(`img1${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+                })
+            }
+
+        }else{
+
+            if(checkrecipescatagori == "veg"){
+
+                cookitem[1][1][0].forEach((item,index)=>{
+                    document.getElementById(`img1${index}`).style.display="none";
+                    document.getElementById(`img${index}`).src=item.itemimg;
+
+                    // document.getElementById(`img${index}`).id=`img0${index}`;
+
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+
+                })
+
+            } else if(checkrecipescatagori == "nonveg"){
+                cookitem[1][1][1].forEach((item,index)=>{
+                    document.getElementById(`img1${index}`).style.display="none";
+                    // item img add in home page 
+
+                    document.getElementById(`img${index}`).src=item.itemimg;
+
+                    // document.getElementById(`img${index}`).id=`img0${index}`;
+
+                    // click to show img in recipes page
+
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+
+                })
+
+            } else{
+                cookitem[1][1][0].forEach((item,index)=>{
+                    document.getElementById(`img${index}`).src=item.itemimg;
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+                })
+                cookitem[1][1][1].forEach((item,index)=>{
+                    document.getElementById(`img1${index}`).style.display="bolck";
+                    document.getElementById(`img1${index}`).src=item.itemimg;
+                    document.getElementById(`img1${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+                })
+            }
+
+        } 
+    } else {
+
+        console.log("sujit panigrahi")
+        if(age.value >= 1 && age.value  <= 10){
+            if(checkrecipescatagori == "veg"){
+
+                cookitem[2][0][0].forEach((item,index)=>{
+
+                    document.getElementById(`img1${index}`).style.display="none";
+
+                    document.getElementById(`img${index}`).src=item.itemimg;
+
+                    // document.getElementById(`img${index}`).id=`img0${index}`;
+
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+
+                })
+
+            } else if(checkrecipescatagori == "nonveg") {
+                cookitem[2][0][1].forEach((item,index)=>{
+
+                    document.getElementById(`img1${index}`).style.display="none";
+                    // item img add in home page 
+
+                    document.getElementById(`img${index}`).src=item.itemimg;
+
+                    // document.getElementById(`img${index}`).id=`img0${index}`;
+
+                    // click to show img in recipes page
+
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+
+                })
+
+            } else{
+                cookitem[2][0][0].forEach((item,index)=>{
+                    document.getElementById(`img${index}`).src=item.itemimg;
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+                })
+                cookitem[2][0][1].forEach((item,index)=>{
+                    document.getElementById(`img1${index}`).style.display="bolck";
+                    document.getElementById(`img1${index}`).src=item.itemimg;
+                    document.getElementById(`img1${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+                })
+            }
+
+        }else{
+
+            if(checkrecipescatagori == "veg"){
+
+                cookitem[2][1][0].forEach((item,index)=>{
+                    document.getElementById(`img1${index}`).style.display="none";
+                    document.getElementById(`img${index}`).src=item.itemimg;
+
+                    // document.getElementById(`img${index}`).id=`img0${index}`;
+
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+
+                })
+
+            } else if(checkrecipescatagori == "nonveg"){
+                cookitem[2][1][1].forEach((item,index)=>{
+
+                    document.getElementById(`img1${index}`).style.display="none";
+                    // item img add in home page 
+
+                    document.getElementById(`img${index}`).src=item.itemimg;
+
+                    // document.getElementById(`img${index}`).id=`img0${index}`;
+
+                    // click to show img in recipes page
+
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+
+                })
+
+            }else{
+                cookitem[2][1][0].forEach((item,index)=>{
+                    document.getElementById(`img${index}`).src=item.itemimg;
+                    document.getElementById(`img${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+                })
+                cookitem[2][1][1].forEach((item,index)=>{
+                    document.getElementById(`img1${index}`).style.display="bolck";
+                    document.getElementById(`img1${index}`).src=item.itemimg;
+                    document.getElementById(`img1${index}`).addEventListener("click",()=>{
+                        document.getElementById("im").src=item.itemimg;
+                    })
+                })
+            }
+
+        } 
+    }
+}
+
+
 

@@ -1,0 +1,89 @@
+    <div class="flex flex-col justify-start items-center w-[96%] h-[20rem] cursor-pointer text-[#0bf1f9] border-2 rounded-lg hover:border-4 border-cyan-700">
+
+
+                        <div class="showsideimg w-[100%] h-[100%]  shadow-lg shadow-white-600 rounded-t-lg ">
+
+                            <!-- no  -->
+                            <span class="text-4xl text-[#121212]" id="slno1">1</span>
+                            <!-- calories  -->
+                            <!-- <div class="flex flex-col justify-center items-center">
+                                <span>Calories</span>
+                                <span></span>
+                            </div> -->
+                        </div>
+
+                        <!-- recipes name and ingredient name  -->
+                        <div class="flex flex-col  justify-center items-start  w-[100%] h-[50%] ">
+                            <!-- recipes name  -->
+                            <div class="flex flex-row justify-center items-center gap-3">
+                                <span class="text-2xl text-[#e4f346] ml-3">Recipes Name : </span>
+                                <span id="recipesname1"></span>
+                            </div>
+                            <!-- ingredient -->
+                            <div class="flex flex-row justify-center items-center" >
+                                <span class="text-2xl text-[#e4f346] ml-3">Ingredient : </span>
+                                <span id="ingredient1"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-col justify-start items-center w-[96%] h-[20rem] cursor-pointer text-[#0bf1f9] border-2 rounded-lg hover:border-4 border-cyan-700">
+
+
+                        <div class="showsideimg w-[100%] h-[100%]  shadow-lg shadow-white-600 rounded-t-lg ">
+
+                            <!-- no  -->
+                            <span class="text-4xl text-[#121212]" id="slno1">1</span>
+                            <!-- calories  -->
+                            <!-- <div class="flex flex-col justify-center items-center">
+                                <span>Calories</span>
+                                <span></span>
+                            </div> -->
+                        </div>
+
+                        <!-- recipes name and ingredient name  -->
+                        <div class="flex flex-col  justify-center items-start  w-[100%] h-[50%] ">
+                            <!-- recipes name  -->
+                            <div class="flex flex-row justify-center items-center gap-3">
+                                <span class="text-2xl text-[#e4f346] ml-3">Recipes Name : </span>
+                                <span id="recipesname1"></span>
+                            </div>
+                            <!-- ingredient -->
+                            <div class="flex flex-row justify-center items-center" >
+                                <span class="text-2xl text-[#e4f346] ml-3">Ingredient : </span>
+                                <span id="ingredient1"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-col justify-start items-center w-[96%] h-[20rem] cursor-pointer text-[#0bf1f9] border-2 rounded-lg hover:border-4 border-cyan-700">
+
+
+                        <div class="showsideimg w-[100%] h-[100%]  shadow-lg shadow-white-600 rounded-t-lg ">
+
+                            <!-- no  -->
+                            <span class="text-4xl text-[#121212]" id="slno1">1</span>
+                            <!-- calories  -->
+                            <!-- <div class="flex flex-col justify-center items-center">
+                                <span>Calories</span>
+                                <span></span>
+                            </div> -->
+                        </div>
+
+                        <!-- recipes name and ingredient name  -->
+                        <div class="flex flex-col  justify-center items-start  w-[100%] h-[50%] ">
+                            <!-- recipes name  -->
+                            <div class="flex flex-row justify-center items-center gap-3">
+                                <span class="text-2xl text-[#e4f346] ml-3">Recipes Name : </span>
+                                <span id="recipesname1"></span>
+                            </div>
+                            <!-- ingredient -->
+                            <div class="flex flex-row justify-center items-center" >
+                                <span class="text-2xl text-[#e4f346] ml-3">Ingredient : </span>
+                                <span id="ingredient1"></span>
+                            </div>
+                        </div>
+
+                    </div>

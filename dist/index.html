@@ -91,7 +91,7 @@
 </head>
 <body class=" ">
     
-    <div class="flex flex-col  justify-center items-center gap-3 firstpage h-[100vh] w-[full] relative  " id="welcomsection">
+    <div class="flex flex-col  justify-center items-center gap-3 firstpage h-[100vh] w-[full] relative hidden " id="welcomsection">
         <h1 class=" text-xl lg:text-2xl font-bold text-rose-800 italic ">Welcome To Food Recommender System </h1>
         <h1 class="ml-2">Before proceedingfuther ,please help us with your preference:</h1>
         <span class="text-2xl">You want to:</span>
@@ -203,7 +203,7 @@
     </div>
 
 
-    <div class=" flex flex-col justify-start items-center w-full h-[100vh] min-h-screen recipesitem border-2 border-red-700 hidden" id="manusection">
+    <div class=" flex flex-col justify-start items-center w-full h-[100vh] min-h-screen recipesitem border-2 border-red-700 " id="manusection">
         <div onclick="backpage1()" class="border-2 border-cyan-500 w-7 h-7 cursor-pointer text-center rounded-full bg-slate-500 hover:bg-slate-700 absolute top-2 left-2  ">
             <!-- <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"          class="cursor-pointer fill-slate-500 hover:fill-slate-700 absolute" id="leftarrow1" ><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9L117.5 269.8c-3.5-3.8-5.5-8.7-5.5-13.8s2-10.1 5.5-13.8l99.9-107.1c4.2-4.5 10.1-7.1 16.3-7.1c12.3 0 22.3 10 22.3 22.3l0 57.7 96 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32l-96 0 0 57.7c0 12.3-10 22.3-22.3 22.3c-6.2 0-12.1-2.6-16.3-7.1z"/></svg> -->
 
@@ -253,8 +253,8 @@
         </div>
 
 
-        <div class=" grid gridforitem w-full h-[60%]">
-            <div class=" w-full min-h-full flex flex-col justify-start items-center gap-4 overflow-scroll" id="popurl item" id="imgadd">
+        <div class=" grid gridforitem w-full h-[60%] bg-[#062030]">
+            <div class=" w-full min-h-full flex flex-col justify-start items-center gap-4 overflow-scroll " id="popurl item" id="imgadd">
                 <h1 class=" text-2xl underline " id="poopularRecipis">Popular Recipis</h1>
                 
                 <img src="./assets/looseweight/above10year/veg/vegetarian-mushroom-paprikash.webp" alt="" class=" cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img0" onclick="gotonextpage(id)" >
@@ -309,40 +309,55 @@
 
 
 
-            <div class="bg-green-500 overflow-scroll">
+            <div class=" overflow-scroll flex flex-col justify-center items-center gap-3">
 
-                <h1 class="text-2xl  text-black">Based on the data provided by you ,our food Recommender System has generatd following recipes </h1>
+                <h1 class="text-2xl  text-black text-center underline mb-2 text-[#0bf1f9]">Based on the data provided by you ,our food Recommender System has generatd following recipes </h1>
 
-                <div class="flex flex-col justify-start items-center w-[100%] h-[20rem] ">
-                    <div class="showsideimg w-full h-[50%] ">
+                <div class="flex flex-col justify-start items-center w-[96%] min-h-[20rem] cursor-pointer text-[#0bf1f9] border-2 rounded-lg hover:border-4 border-cyan-700">
 
-                        <!-- no  -->
-                        <span class="text-2xl ">1</span>
-                        <!-- calories  -->
-                        <div class="flex flex-col justify-center items-center">
-                            <span>Calories</span>
-                            <span></span>
-                        </div>
+
+                    
+
+                    <div class="showsideimg w-[100%] h-[100%]  shadow-lg shadow-white-600 rounded-t-lg ">
+
+                            <!-- no  -->
+                            <span class="text-4xl text-[#121212]" id="slno0">1</span>
+                            <!-- calories  -->
+                            <!-- <div class="flex flex-col justify-center items-center">
+                                <span>Calories</span>
+                                <span></span>
+                            </div> -->
                     </div>
 
                     <!-- recipes name and ingredient name  -->
-                    <div class="flex flex-row justify-center items-center ">
-                        <!-- recipes name  -->
-                        <div class="flex flex-row justify-center items-center gap-3">
-
-                        </div>
-                        <!-- ingredient -->
-                        <div class="flex flex-row justify-center items-center">
-
-                        </div>
+                    <div class="flex flex-col  justify-center items-start  w-[100%] h-[50%] ">
+                            <!-- recipes name  -->
+                            <div class="flex flex-row justify-center items-center gap-3">
+                                <span class="text-2xl text-[#e4f346] ml-3">Recipes Name : </span>
+                                <span id="recipesname0"></span>
+                            </div>
+                            <!-- ingredient -->
+                            <div class="flex flex-row justify-center items-center" >
+                                <span class="text-2xl text-[#e4f346] ml-3">Ingredient : </span>
+                                <span id="ingredient0"></span>
+                            </div>
                     </div>
 
-                </div>
+                    
 
+                </div>
+               
+                
+                
             </div>
+                
+
+            
 
         </div>
     </div>
+
+    
 
     <div class="w-96 h-96 hidden  " id="addnewimg" >
         <img src="" alt="" class="w-full h-full " id="im">
