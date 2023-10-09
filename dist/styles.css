@@ -546,6 +546,10 @@ video {
   left: 0.5rem;
 }
 
+.right-2 {
+  right: 0.5rem;
+}
+
 .top-2 {
   top: 0.5rem;
 }
@@ -562,16 +566,8 @@ video {
   top: 35.5rem;
 }
 
-.top-\[\] {
-  top: ;
-}
-
 .top-\[50\%\] {
   top: 50%;
-}
-
-.right-2 {
-  right: 0.5rem;
 }
 
 .z-10 {
@@ -635,10 +631,6 @@ video {
   height: 0.15rem;
 }
 
-.h-\[100\%\] {
-  height: 100%;
-}
-
 .h-\[100vh\] {
   height: 100vh;
 }
@@ -655,16 +647,12 @@ video {
   height: 60%;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-\[0\%\] {
-  height: 0%;
-}
-
 .h-\[70\%\] {
   height: 70%;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .min-h-\[20rem\] {
@@ -677,22 +665,6 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-\[0rem\] {
-  min-height: 0rem;
-}
-
-.min-h-\[1rem\] {
-  min-height: 1rem;
-}
-
-.min-h-\[18rem\] {
-  min-height: 18rem;
-}
-
-.min-h-\[rem\] {
-  min-height: rem;
 }
 
 .w-14 {
@@ -819,6 +791,10 @@ video {
 
 .overflow-scroll {
   overflow: scroll;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded-full {
