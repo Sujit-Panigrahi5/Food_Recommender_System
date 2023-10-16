@@ -200,7 +200,9 @@ function donnotshowbar(idofbar){
     document.getElementById(idofbar).style.display="none"
 }
 
-
+let foodreco="About The Food Recommender System ";
+let textind=0;
+let textabout="";
 let color=[
     "1",
     "2",
@@ -223,13 +225,29 @@ function colorchange(){
     for(let i=0;i<6;i++){
         finalcolor+= color[setcolor()]
     }
-    document.getElementById("edit").style.borderColor=finalcolor
-  document.getElementById("foodrecommender").style.color=finalcolor;
-  document.getElementById("poopularRecipis").style.color=finalcolor;
 
-
-  document.getElementById("searchdiv").style.borderColor=finalcolor;
-  return finalcolor;
+    if(textind == foodreco.length-1){
+        document.getElementById("abouthetext").innerHTML="";
+        textabout="";
+        textind=0;
+        let letter=foodreco.charAt(textind);
+        textabout+=letter;
+        document.getElementById("abouthetext").textContent=textabout;
+        document.getElementById("abouthetext").style.color=finalcolor;
+        textind++;
+    } else{
+        let letter=foodreco.charAt(textind);
+        textabout+=letter;
+        document.getElementById("abouthetext").textContent=textabout;
+        document.getElementById("abouthetext").style.color=finalcolor;
+        textind++;
+    }
+    
+    document.getElementById("edit").style.borderColor=finalcolor;
+    // document.getElementById("foodrecommender").style.color=finalcolor;
+    document.getElementById("poopularRecipis").style.color=finalcolor;
+    document.getElementById("searchdiv").style.borderColor=finalcolor;
+    return finalcolor;
 
 }
 
@@ -238,7 +256,7 @@ function setcolor(){
     return Math.floor(Math.random()*color.length);
 
 }
-setInterval(colorchange,2000)
+setInterval(colorchange,800)
 
 
 
@@ -1319,6 +1337,7 @@ let thirdarray=0;
 
 
 let currentindex=0;
+let index=0;
 
 function addallid(){
 
@@ -1334,6 +1353,7 @@ function addallid(){
                 secondarray=0;
                 thirdarray=0;
                 currentindex=0;
+                index =0;
                 cookitem[0][0][0].forEach((item,index)=>{
 
                     document.getElementById(`img1${index}`).style.display="none";
@@ -1371,6 +1391,7 @@ function addallid(){
                     })
 
                 })
+                index =0;
 
             } else{
                 firstarray=0;
@@ -1396,7 +1417,8 @@ function addallid(){
                     })
 
 
-                })
+                });
+                index =0;
             }
 
         }else{
@@ -1471,6 +1493,7 @@ function addallid(){
                 secondarray=0;
                 thirdarray=0;
                 currentindex=0;
+                index =0;
                 cookitem[1][0][0].forEach((item,index)=>{
 
                     document.getElementById(`img1${index}`).style.display="none";
@@ -1489,6 +1512,7 @@ function addallid(){
                 secondarray=0;
                 thirdarray=1;
                 currentindex=0;
+                index =0;
                 cookitem[1][0][1].forEach((item,index)=>{
 
                     document.getElementById(`img1${index}`).style.display="none";
@@ -1510,7 +1534,8 @@ function addallid(){
                 firstarray=1;
                 secondarray=0;
                 thirdarray=0;
-                currentindex=0
+                currentindex=0;
+                index =0;
                 cookitem[1][0][0].forEach((item,index)=>{
                     document.getElementById(`img${index}`).src=item.itemimg;
 
@@ -1533,7 +1558,8 @@ function addallid(){
                 firstarray=1;
                 secondarray=1;
                 thirdarray=0;
-                currentindex=0
+                currentindex=0;
+                index =0;
                 cookitem[1][1][0].forEach((item,index)=>{
                     document.getElementById(`img1${index}`).style.display="none";
                     document.getElementById(`img${index}`).src=item.itemimg;
@@ -1550,6 +1576,7 @@ function addallid(){
                 firstarray=1;
                 secondarray=1;
                 thirdarray=1;
+                index =0;
                 cookitem[1][1][1].forEach((item,index)=>{
                     document.getElementById(`img1${index}`).style.display="none";
                     // item img add in home page 
@@ -1572,6 +1599,7 @@ function addallid(){
                 firstarray=1;
                 secondarray=1;
                 thirdarray=0;
+                index =0;
                 cookitem[1][1][0].forEach((item,index)=>{
                     document.getElementById(`img${index}`).src=item.itemimg;
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
@@ -1592,12 +1620,13 @@ function addallid(){
         } 
     } else {
 
-        console.log("sujit panigrahi")
+        
         if(age.value >= 1 && age.value  <= 10){
             if(checkrecipescatagori == "veg"){
                 firstarray=2;
                 secondarray=0;
                 thirdarray=0;
+                index =0;
                 cookitem[2][0][0].forEach((item,index)=>{
 
                     document.getElementById(`img1${index}`).style.display="none";
@@ -1617,6 +1646,7 @@ function addallid(){
                 firstarray=2;
                 secondarray=0;
                 thirdarray=1;
+                index =0;
                 cookitem[2][0][1].forEach((item,index)=>{
 
                     document.getElementById(`img1${index}`).style.display="none";
@@ -1640,6 +1670,7 @@ function addallid(){
                 secondarray=0;
                 thirdarray=0;
                 currentindex=0;
+                index =0;
                 cookitem[2][0][0].forEach((item,index)=>{
                     document.getElementById(`img${index}`).src=item.itemimg;
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
@@ -1661,6 +1692,7 @@ function addallid(){
                 firstarray=2;
                 secondarray=1;
                 thirdarray=0;
+                index =0;
                 cookitem[2][1][0].forEach((item,index)=>{
                     document.getElementById(`img1${index}`).style.display="none";
                     document.getElementById(`img${index}`).src=item.itemimg;
@@ -1679,6 +1711,7 @@ function addallid(){
                 secondarray=1;
                 thirdarray=1;
                 currentindex=0;
+                index =0;
                 cookitem[2][1][1].forEach((item,index)=>{
 
                     document.getElementById(`img1${index}`).style.display="none";
@@ -1700,7 +1733,8 @@ function addallid(){
                 firstarray=2;
                 secondarray=1;
                 thirdarray=0;
-                currentindex=0
+                currentindex=0;
+                index =0;
                 cookitem[2][1][0].forEach((item,index)=>{
                     document.getElementById(`img${index}`).src=item.itemimg;
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
@@ -1726,19 +1760,15 @@ function backpage1(){
     document.getElementById("infosection").style.display="block"
 }
 
+// addallid();
+// let itemforforword_or_backword;
 
 function gotonextphoto(){
 
-    if( currentindex==9 && (checkrecipescatagori == "veg" || checkrecipescatagori == "nonveg")  ){
-        currentindex=0;
-    } 
-
-    if(currentindex == 19 && checkrecipescatagori == "both"){
-        currentindex =0;
-    }
-
+    
     let item=cookitem[firstarray][secondarray][thirdarray][currentindex];
-    let item1=cookitem[firstarray][secondarray][thirdarray+1][currentindex];
+    // itemforforword_or_backword=item;
+    
 
     if(checkrecipescatagori == "veg" || checkrecipescatagori == "nonveg"){
        
@@ -1757,9 +1787,36 @@ function gotonextphoto(){
             document.getElementById("im").src=item.itemimg;
         })
 
+        if(currentindex == 9 ){
+            currentindex = -1;
+            index =-1;
+        }
+
 
     } else{
-        if(currentindex <= 9){
+        if(index <= 9){
+            document.getElementById("showsideimg").src =item.itemimg;
+        
+            document.getElementById("slno0").textContent=index+1;
+            
+            document.getElementById("recipesname0").textContent=item.name;
+    
+            document.getElementById("ingredient0").textContent=item.ingredients;
+
+            
+
+            document.getElementById("showsideimg").addEventListener("click",()=>{
+                document.getElementById("im").src=item.itemimg;
+            })
+
+            if(currentindex==9){
+                thirdarray=thirdarray+1;
+                currentindex=-1;
+                
+            }
+
+        } else{
+            // console.log(item.ingredients)
             document.getElementById("showsideimg").src =item.itemimg;
         
             document.getElementById("slno0").textContent=index+1;
@@ -1771,44 +1828,108 @@ function gotonextphoto(){
             document.getElementById("showsideimg").addEventListener("click",()=>{
                 document.getElementById("im").src=item.itemimg;
             })
-        } else{
-            document.getElementById("showsideimg").src =item1.itemimg;
-        
-            document.getElementById("slno0").textContent=index+1;
-            
-            document.getElementById("recipesname0").textContent=item1.name;
-    
-            document.getElementById("ingredient0").textContent=item1.ingredients;
 
-            document.getElementById("showsideimg").addEventListener("click",()=>{
-                document.getElementById("im").src=item1.itemimg;
-            })
+            console.log("sujitjikjklj")
+
+            if( currentindex == 9){
+                thirdarray = thirdarray-1;
+                currentindex = -1;
+                index=-1;
+            }
 
         }
     }
 
+    currentindex+=1;
+    index+=1;
+
+   
  
 }
 
-setInterval(gotonextphoto,1000)
+setInterval(gotonextphoto,1500)
+// gotonextphoto();
 
 // backwork move 
 
 let movebackword=()=>{
+
+   
     if(currentindex == 0){
-        document.getElementById("showsideimg").src =cookcookitem[firstarray][secondarray][thirdarray][9];
+
+        if(checkrecipescatagori == "veg" || checkrecipescatagori == "nonveg"){
+            document.getElementById("showsideimg").src =cookcookitem[firstarray][secondarray][thirdarray][9];
+
+            document.getElementById("slno0").textContent=9;
+            document.getElementById("recipesname0").textContent=cookitem[firstarray][secondarray][thirdarray][9].name;
+
+            document.getElementById("ingredient0").textContent=cookitem[firstarray][secondarray][thirdarray][9].ingredients;
+
+            index=9;
+            currentindex=9;
+            return;
+
+        } else{
+            document.getElementById("showsideimg").src =cookcookitem[firstarray][secondarray][thirdarray][19];
+            
+            document.getElementById("slno0").textContent=19;
+            document.getElementById("recipesname0").textContent=cookitem[firstarray][secondarray][thirdarray][19].name;
+
+            document.getElementById("ingredient0").textContent=cookitem[firstarray][secondarray][thirdarray][19].ingredients;
+
+            index=19;
+            currentindex=19;
+            return;
+        }
+            
+        
     }
-    document.getElementById("showsideimg").src =cookcookitem[firstarray][secondarray][thirdarray][currentindex-1];
+
+    
+    document.getElementById("showsideimg").src =cookitem[firstarray][secondarray][thirdarray][currentindex-2].itemimg;
+    document.getElementById("slno0").textContent=index-1;
+    document.getElementById("recipesname0").textContent=cookitem[firstarray][secondarray][thirdarray][currentindex-2].name;
+
+    document.getElementById("ingredient0").textContent=cookitem[firstarray][secondarray][thirdarray][currentindex-2].ingredients;
+    currentindex-=2;
+    index-= 2;
+
 
 }
 
 let moveforword=()=>{
-    if(currentindex == 9){
+    if(currentindex == 9 || currentindex == 19 ){
         document.getElementById("showsideimg").src =cookcookitem[firstarray][secondarray][thirdarray][0];
+
+        document.getElementById("showsideimg").src =cookitem[firstarray][secondarray][thirdarray][0].itemimg;
+    
+        document.getElementById("slno0").textContent=index;
+
+        document.getElementById("recipesname0").textContent=cookitem[firstarray][secondarray][thirdarray][0].name;
+
+        document.getElementById("ingredient0").textContent=cookitem[firstarray][secondarray][thirdarray][0].ingredients;
+
+        index=0;
+        currentindex=0;
+        return;
     }
-    document.getElementById("showsideimg").src =cookcookitem[firstarray][secondarray][thirdarray][currentindex+1];
+
+    document.getElementById("slno0").textContent=index;
+    document.getElementById("showsideimg").src =cookitem[firstarray][secondarray][thirdarray][currentindex].itemimg;
+
+    document.getElementById("showsideimg").src =cookitem[firstarray][secondarray][thirdarray][currentindex].itemimg;
+
+    // document.getElementById("slno0").textContent=index;
+
+    document.getElementById("recipesname0").textContent=cookitem[firstarray][secondarray][thirdarray][currentindex].name;
+
+    document.getElementById("ingredient0").textContent=cookitem[firstarray][secondarray][thirdarray][currentindex].ingredients;
 
 }
+
+
+
+
 
 
 
