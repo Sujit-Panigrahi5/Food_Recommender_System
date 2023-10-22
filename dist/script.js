@@ -1364,6 +1364,17 @@ function addallid(){
 
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        document.getElementById("img_ingred_instru").style.display="flex";
+                        document.getElementById("img_ingred_instru").style.flex="col";
+                        document.getElementById("imgandingre").style.display="flex";
+                        document.getElementById("instruction").style.display="flex";
+                        document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
 
                 })
@@ -1388,6 +1399,17 @@ function addallid(){
 
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        document.getElementById("img_ingred_instru").style.display="flex";
+                        document.getElementById("img_ingred_instru").style.flex="col";
+                        document.getElementById("imgandingre").style.display="flex";
+                        document.getElementById("instruction").style.display="flex";
+                        document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
 
                 })
@@ -1402,18 +1424,40 @@ function addallid(){
                     document.getElementById(`img${index}`).src=item.itemimg;
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
                 })
                 cookitem[0][0][1].forEach((item,index)=>{
 
-                    document.getElementById(`img1${index}`).style.display="bolck";
+                document.getElementById(`img1${index}`).style.display="bolck";
 
-                    document.getElementById(`img1${index}`).src=item.itemimg;
+                document.getElementById(`img1${index}`).src=item.itemimg;
 
                     
 
-                    document.getElementById(`img1${index}`).addEventListener("click",()=>{
-                        document.getElementById("im").src=item.itemimg;
+                document.getElementById(`img1${index}`).addEventListener("click",()=>{
+                    document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
 
 
@@ -1438,6 +1482,17 @@ function addallid(){
 
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
 
                 })
@@ -1460,6 +1515,17 @@ function addallid(){
 
                     document.getElementById(`img0${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
 
                 })
@@ -1473,6 +1539,17 @@ function addallid(){
                     document.getElementById(`img${index}`).src=item.itemimg;
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
                 })
                 cookitem[0][1][1].forEach((item,index)=>{
@@ -1481,6 +1558,17 @@ function addallid(){
 
                     document.getElementById(`img1${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                            document.getElementById("showselectphoto").style.display="block";
+                            document.getElementById("showselectphoto").style.display="grid";
+                            // document.getElementById("img_ingred_instru").style.display="flex";
+                            // document.getElementById("img_ingred_instru").style.flex="col";
+                            // document.getElementById("imgandingre").style.display="flex";
+                            // document.getElementById("instruction").style.display="flex";
+                            // document.getElementById("imgadd1").style.display="flex";
+                            document.getElementById("imname").textContent=item.name;
+                            document.getElementById("ingredientlist").textContent=item.ingredients;
+                            document.getElementById("ingredientlist").textContent=item.instruction;
                     })
                 })
             }
@@ -1503,6 +1591,17 @@ function addallid(){
 
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
 
                 })
@@ -1526,6 +1625,17 @@ function addallid(){
 
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
 
                 })
@@ -1541,6 +1651,17 @@ function addallid(){
 
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
                 })
                 cookitem[1][0][1].forEach((item,index)=>{
@@ -1548,6 +1669,17 @@ function addallid(){
                     document.getElementById(`img1${index}`).src=item.itemimg
                     document.getElementById(`img1${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
                 })
             }
@@ -1568,6 +1700,17 @@ function addallid(){
 
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
 
                 })
@@ -1589,6 +1732,17 @@ function addallid(){
 
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
 
                 });
@@ -1604,6 +1758,17 @@ function addallid(){
                     document.getElementById(`img${index}`).src=item.itemimg;
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
                 })
                 cookitem[1][1][1].forEach((item,index)=>{
@@ -1611,6 +1776,17 @@ function addallid(){
                     document.getElementById(`img1${index}`).src=item.itemimg;
                     document.getElementById(`img1${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
                 })
 
@@ -1637,6 +1813,17 @@ function addallid(){
 
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
 
                 })
@@ -1660,6 +1847,17 @@ function addallid(){
 
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
 
                 });
@@ -1675,6 +1873,17 @@ function addallid(){
                     document.getElementById(`img${index}`).src=item.itemimg;
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
                 })
                 cookitem[2][0][1].forEach((item,index)=>{
@@ -1682,6 +1891,17 @@ function addallid(){
                     document.getElementById(`img1${index}`).src=item.itemimg;
                     document.getElementById(`img1${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
                 })
             }
@@ -1701,6 +1921,17 @@ function addallid(){
 
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
 
                 });
@@ -1725,6 +1956,17 @@ function addallid(){
 
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
 
                 })
@@ -1739,6 +1981,17 @@ function addallid(){
                     document.getElementById(`img${index}`).src=item.itemimg;
                     document.getElementById(`img${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
                 })
                 cookitem[2][1][1].forEach((item,index)=>{
@@ -1746,6 +1999,17 @@ function addallid(){
                     document.getElementById(`img1${index}`).src=item.itemimg;
                     document.getElementById(`img1${index}`).addEventListener("click",()=>{
                         document.getElementById("im").src=item.itemimg;
+                        document.getElementById("showallphoto").style.display="none";
+                        document.getElementById("showselectphoto").style.display="block";
+                        document.getElementById("showselectphoto").style.display="grid";
+                        // document.getElementById("img_ingred_instru").style.display="flex";
+                        // document.getElementById("img_ingred_instru").style.flex="col";
+                        // document.getElementById("imgandingre").style.display="flex";
+                        // document.getElementById("instruction").style.display="flex";
+                        // document.getElementById("imgadd1").style.display="flex";
+                        document.getElementById("imname").textContent=item.name;
+                        document.getElementById("ingredientlist").textContent=item.ingredients;
+                        document.getElementById("ingredientlist").textContent=item.instruction;
                     })
                 })
             }
@@ -1784,7 +2048,22 @@ function gotonextphoto(){
         document.getElementById("ingredient0").textContent=item.ingredients;
 
         document.getElementById("showsideimg").addEventListener("click",()=>{
+
             document.getElementById("im").src=item.itemimg;
+            document.getElementById("showallphoto").style.display="none";
+            document.getElementById("showselectphoto").style.display="block";
+
+            document.getElementById("showselectphoto").style.display="grid";
+            document.getElementById("img_ingred_instru").style.display="flex";
+            document.getElementById("img_ingred_instru").style.flex="col";
+            document.getElementById("imgandingre").style.display="flex";
+            document.getElementById("instruction").style.display="flex";
+            document.getElementById("imgadd1").style.display="flex";
+
+            document.getElementById("imname").textContent=item.name;
+            document.getElementById("ingredientlist").textContent=item.ingredients;
+            document.getElementById("ingredientlist").textContent=item.instruction;
+
         })
 
         if(currentindex == 9 ){
@@ -1805,8 +2084,28 @@ function gotonextphoto(){
 
             
 
+            
+
             document.getElementById("showsideimg").addEventListener("click",()=>{
                 document.getElementById("im").src=item.itemimg;
+                document.getElementById("showallphoto").style.display="none";
+                document.getElementById("showselectphoto").style.display="block";
+                document.getElementById("imname").textContent=item.name;
+                document.getElementById("ingredientlist").textContent=item.ingredients;
+                document.getElementById("ingredientlist").textContent=item.instruction;
+
+                document.getElementById("showselectphoto").style.display="grid";
+                document.getElementById("img_ingred_instru").style.display="flex";
+                document.getElementById("img_ingred_instru").style.flex="col";
+                document.getElementById("imgandingre").style.display="flex";
+                document.getElementById("instruction").style.display="flex";
+                // document.getElementById("imgadd").style.display="flex";
+
+                // document.getElementById("imname").textContent=item.name;
+                // document.getElementById("ingredientlist").textContent=item.ingredients;
+                // document.getElementById("ingredientlist").textContent=item.instruction;
+
+                console.log("sujit panigrahi")
             })
 
             if(currentindex==9){
@@ -1827,9 +2126,22 @@ function gotonextphoto(){
 
             document.getElementById("showsideimg").addEventListener("click",()=>{
                 document.getElementById("im").src=item.itemimg;
+                document.getElementById("showallphoto").style.display="none";
+                document.getElementById("showselectphoto").style.display="block";
+
+                document.getElementById("showselectphoto").style.display="grid";
+                document.getElementById("img_ingred_instru").style.display="flex";
+                document.getElementById("img_ingred_instru").style.flex="col";
+                document.getElementById("imgandingre").style.display="flex";
+                document.getElementById("instruction").style.display="flex";
+                document.getElementById("imgadd1").style.display="flex";
+
+                document.getElementById("imname").textContent=item.name;
+                document.getElementById("ingredientlist").textContent=item.ingredients;
+                document.getElementById("ingredientlist").textContent=item.instruction;
             })
 
-            console.log("sujitjikjklj")
+            // console.log("sujitjikjklj")
 
             if( currentindex == 9){
                 thirdarray = thirdarray-1;
