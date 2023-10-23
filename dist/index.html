@@ -258,7 +258,7 @@
 
         <!-- id="popurl item" -->
 
-        <div class=" grid gridforitem w-full h-[60%] bg-[#062030]   " id="showallphoto">
+        <div class=" grid gridforitem w-full h-[60%] bg-[#062030] hidden " id="showallphoto">
             <div class=" w-full min-h-full flex flex-col justify-start items-center gap-4 overflow-scroll "  id="imgadd" >
                 <h1 class=" text-2xl underline " id="poopularRecipis">Popular Recipis</h1>
                 
@@ -365,6 +365,8 @@
                 
                 
             </div>
+
+          
                 
 
             
@@ -388,13 +390,13 @@
            
         </div>
 
-        <div class="grid gridforitemshow w-full h-[60%] bg-[#4f8fb8] hidden" id="showselectphoto">
+        <div class="grid gridforitemshow w-full h-[60%] bg-[#4f8fb8] border-2 border-red-700 hidden" id="showselectphoto">
 
-            <div class="flex flex-col justify-start items-start " id="img_ingred_instru">
+            <div class="flex flex-col justify-start items-start max-w-full  border-4 border-green-700 w-96  " id="img_ingred_instru">
                 
-                <div class="flex flex-row justify-center items-start gap-4 flex-wrap" id="imgandingre">
+                <div class="flex flex-row justify-start items-start gap-4 flex-wrap w-full  border-2 border-yellow-700 " id="imgandingre">
                     <!-- itemimgsection -->
-                    <div class="w-96 h-96 flex flex-col justify-start items-center " id="addnewimg" >
+                    <div class="w-56 h-56 flex flex-col justify-start items-center " id="addnewimg" >
                         <!-- itemimg -->
                         <img src="" alt="" class="w-full h-full " id="im">
                         <!-- itemimg name  -->
@@ -410,7 +412,7 @@
                 </div>
 
                 <!-- instruction section -->
-                <div class="flex flex-col justify-center  items-center flex-wrap" id="instruction">
+                <div class="flex flex-col justify-start  items-start flex-wrap w-full" id="instruction">
                     <span>instruction</span>
                     <p id="instructionlist"></p>
                 </div>
@@ -418,63 +420,47 @@
     
             </div>
     
-            <!-- <div class="flex flex-col justify-start  items-center flex-wrap">
-              
-            </div> -->
-
-            <div class=" w-full min-h-full flex flex-col justify-start items-center gap-4 overflow-scroll " id="imgadd" >
-                <h1 class=" text-2xl underline " id="poopularRecipis">Popular Recipis</h1>
-                
-                <img src="./assets/looseweight/above10year/veg/vegetarian-mushroom-paprikash.webp" alt="" class=" cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img0" onclick="gotonextpage(id)" >
-
-                <img src="./assets/looseweight/above10year/veg/vegetarian-mushroom-paprikash.webp" alt="" class="cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img1" onclick="gotonextpage(id)" >
-
-                <img src="./assets/looseweight/above10year/veg/vegetarian-mushroom-paprikash.webp" alt="" class="cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img2" onclick="gotonextpage(id)" >
-
-                <img src="./assets/looseweight/above10year/veg/vegetarian-mushroom-paprikash.webp" alt="" class="cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img3" onclick="gotonextpage(id)" >
-
-                <img src="./assets/looseweight/above10year/veg/vegetarian-mushroom-paprikash.webp" alt="" class=" cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 img4" id="img4"
-                onclick="gotonextpage(id)" >
-
-                <img src="./assets/looseweight/above10year/veg/vegetarian-mushroom-paprikash.webp" alt="" class=" cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img5" onclick="gotonextpage(id)">
-
-                <img src="./assets/looseweight/above10year/veg/vegetarian-mushroom-paprikash.webp" alt="" class=" cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img6" onclick="gotonextpage(id)">
-
-                <img src="./assets/looseweight/above10year/veg/vegetarian-mushroom-paprikash.webp" alt="" class="cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img7"
-                onclick="gotonextpage(id)">
-
-                <img src="./assets/looseweight/above10year/veg/vegetarian-mushroom-paprikash.webp" alt="" class="cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img8" onclick="gotonextpage(id)">
-
-                <img src="./assets/looseweight/above10year/veg/vegetarian-mushroom-paprikash.webp" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img9" onclick="gotonextpage(id)">
-
-
-                <!-- for both case  -->
-                
-                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img10" onclick="gotonextpage(id)">
-
-                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img11" onclick="gotonextpage(id)">
-
-                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600  " id="img12" onclick="gotonextpage(id)">
-
-
-                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600   " id="img13" onclick="gotonextpage(id)">
-
-                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img14" onclick="gotonextpage(id)">
-
-                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600  " id="img15" onclick="gotonextpage(id)">
-
-                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600  " id="img16" onclick="gotonextpage(id)">
-
-                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img17" onclick="gotonextpage(id)">
-
-
-                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img18" onclick="gotonextpage(id)">
-
-
-                <img src="" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600  " id="img19" onclick="gotonextpage(id)">
-                
+            <div class="flex flex-col justify-start  items-center flex-wrap">
+              <img src="./assets/bg_food.webp" alt="" class="w-56 h-56 rounded-lg">
             </div>
+
+            
         </div>
+
+
+        <div class="grid gridforitem w-full h-[60%] bg-[#062030]  " id="recipespup">
+            <div class="w-full min-h-full flex flex-col justify-start items-center gap-4 overflow-scroll">
+                <h1 class=" text-2xl underline text-cyan-200" >Popular Recipis</h1>
+                
+                <img src="./assets/looseweight/1to6year/veg/Baked Fish with Quinoa and Steamed Broccoli.jpeg" alt="" class=" cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img00"  >
+
+                <img src="./assets/looseweight/1to6year/nonveg/Chettinad_Muttai_Masala_Recipe.jpg" alt="" class="cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img01"  >
+
+                <img src="./assets/looseweight/above10year/veg/vegetarian-mushroom-paprikash.webp" alt="" class="cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img02"  >
+
+                <img src="./assets/maintainweight/1to10years/veg/Banana and Nut Butter Sandwich.jpeg" alt="" class="cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img03"  >
+
+                <img src="./assets/maintainweight/1to10years/nonveg/Baked Chicken Tenders.jpeg" alt="" class=" cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 img4" id="img10"
+                 >
+
+                <img src="./assets/maintainweight/above10years/veg/aloo_tomato_jhol.webp" alt="" class=" cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img11" >
+
+                <img src="./assets/maintainweight/above10years/nonveg/butter-chicken.webp" alt="" class=" cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img12" >
+
+                <img src="./assets/gainweight/above10years/nonveg/Chicken-Biryani.jpg" alt="" class="cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img13"
+                >
+
+                <img src="./assets/gainweight/above10years/veg/" alt="" class="cursor-pointer w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img20" >
+
+                <img src="./assets/gainweight/1to10years/nonveg/Chicken soup.jpg" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img21" >
+
+                <img src="./assets/gainweight/1to10years/nonveg/Chicken soup.jpg" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img22" >
+
+                <img src="./assets/gainweight/1to10years/nonveg/Chicken soup.jpg" alt="" class="cursor-pointer  w-[90%] h-[50%] rounded-lg shadow-lg shadow-slate-600 " id="img23" >
+            </div>
+            <div></div>
+        </div>
+
 
 
     </div>

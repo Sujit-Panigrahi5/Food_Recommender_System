@@ -2032,6 +2032,8 @@ function gotonextphoto(){
     
     let item=cookitem[firstarray][secondarray][thirdarray][currentindex];
     // itemforforword_or_backword=item;
+
+
     
 
     if(checkrecipescatagori == "veg" || checkrecipescatagori == "nonveg"){
@@ -2053,16 +2055,16 @@ function gotonextphoto(){
             document.getElementById("showallphoto").style.display="none";
             document.getElementById("showselectphoto").style.display="block";
 
-            document.getElementById("showselectphoto").style.display="grid";
-            document.getElementById("img_ingred_instru").style.display="flex";
-            document.getElementById("img_ingred_instru").style.flex="col";
-            document.getElementById("imgandingre").style.display="flex";
-            document.getElementById("instruction").style.display="flex";
-            document.getElementById("imgadd1").style.display="flex";
+            // document.getElementById("showselectphoto").style.display="grid";
+            // document.getElementById("img_ingred_instru").style.display="flex";
+            // document.getElementById("img_ingred_instru").style.flex="col";
+            // document.getElementById("imgandingre").style.display="flex";
+            // document.getElementById("instruction").style.display="flex";
+            // document.getElementById("imgadd1").style.display="flex";
 
             document.getElementById("imname").textContent=item.name;
             document.getElementById("ingredientlist").textContent=item.ingredients;
-            document.getElementById("ingredientlist").textContent=item.instruction;
+            document.getElementById("instructionlist").textContent=item.instruction;
 
         })
 
@@ -2094,13 +2096,8 @@ function gotonextphoto(){
                 document.getElementById("ingredientlist").textContent=item.ingredients;
                 document.getElementById("ingredientlist").textContent=item.instruction;
 
-                document.getElementById("showselectphoto").style.display="grid";
-                document.getElementById("img_ingred_instru").style.display="flex";
-                document.getElementById("img_ingred_instru").style.flex="col";
-                document.getElementById("imgandingre").style.display="flex";
-                document.getElementById("instruction").style.display="flex";
-                // document.getElementById("imgadd").style.display="flex";
-
+                
+               
                 // document.getElementById("imname").textContent=item.name;
                 // document.getElementById("ingredientlist").textContent=item.ingredients;
                 // document.getElementById("ingredientlist").textContent=item.instruction;
@@ -2129,12 +2126,12 @@ function gotonextphoto(){
                 document.getElementById("showallphoto").style.display="none";
                 document.getElementById("showselectphoto").style.display="block";
 
-                document.getElementById("showselectphoto").style.display="grid";
-                document.getElementById("img_ingred_instru").style.display="flex";
-                document.getElementById("img_ingred_instru").style.flex="col";
-                document.getElementById("imgandingre").style.display="flex";
-                document.getElementById("instruction").style.display="flex";
-                document.getElementById("imgadd1").style.display="flex";
+                // document.getElementById("showselectphoto").style.display="grid";
+                // document.getElementById("img_ingred_instru").style.display="flex";
+                // document.getElementById("img_ingred_instru").style.flex="col";
+                // document.getElementById("imgandingre").style.display="flex";
+                // document.getElementById("instruction").style.display="flex";
+                // document.getElementById("imgadd1").style.display="flex";
 
                 document.getElementById("imname").textContent=item.name;
                 document.getElementById("ingredientlist").textContent=item.ingredients;
@@ -2238,6 +2235,93 @@ let moveforword=()=>{
     document.getElementById("ingredient0").textContent=cookitem[firstarray][secondarray][thirdarray][currentindex].ingredients;
 
 }
+
+
+function gotonextpage(img,name){
+    document.getElementById("recipespup").style.display="none";
+    document.getElementById("showselectphoto").style.display="block";
+    document.getElementById("im").src=img;
+    document.getElementById("imname").textContent=name;
+    document.getElementById("ingredientlist").textContent=item.ingredients;
+    document.getElementById("instructionlist").textContent=item.instruction;
+}
+
+
+function addrecipesphoto(){
+    let imgstoreid;
+    for(let i =0;i<cookitem.length;i++){
+        console.log("enter")
+        
+        // document.getElementById(`img${i}${j}`)=cookitem[0][0][0][0].itemimg;
+
+        for(let j=0;j<4;j++){
+            console.log("sujit here me ");
+            
+            // document.getElementById(`img${i}${j}`)=cookitem[0][0][0][0].itemimg;
+            console.log("sujit here ")
+            if(j==1){
+
+                 imgstoreid=`img${i}${j}`;
+                 console.log(imgstoreid);
+                document.getElementById(imgstoreid).src=cookitem[i][0][1][0].itemimg;
+                document.getElementById(imgstoreid).addEventListener("click",()=>{
+                    document.getElementById("im").src=cookitem[i][0][1][0].itemimg;
+                    document.getElementById("recipespup").style.display="none";
+                    document.getElementById("showselectphoto").style.display="block";
+                    document.getElementById("imname").textContent=cookitem[i][0][1][0].name;
+                    document.getElementById("ingredientlist").textContent=cookitem[i][0][1][0].ingredients;
+                    document.getElementById("instructionlist").textContent=cookitem[i][0][1][0].instruction;
+                })
+            } else if(j==2){
+                 imgstoreid=`img${i}${j}`;
+                 console.log(imgstoreid);
+
+                document.getElementById(imgstoreid).src=cookitem[i][1][0][0].itemimg;
+                document.getElementById(imgstoreid).addEventListener("click",()=>{
+                    document.getElementById("im").src=cookitem[i][1][0][0].itemimg;
+                    document.getElementById("recipespup").style.display="none";
+                    document.getElementById("showselectphoto").style.display="block";
+                    document.getElementById("imname").textContent=cookitem[i][1][0][0].name;
+                    document.getElementById("ingredientlist").textContent=cookitem[i][1][0][0].ingredients;
+                    document.getElementById("instructionlist").textContent=cookitem[i][1][0][0].instruction;
+                })
+            } else if(j==3){
+                imgstoreid=`img${i}${j}`;
+                console.log(imgstoreid);
+
+                document.getElementById(imgstoreid).src=cookitem[0][1][1][0].itemimg;
+                document.getElementById(imgstoreid).addEventListener("click",()=>{
+                    document.getElementById("im").src=cookitem[i][1][1][0].itemimg;
+                    document.getElementById("recipespup").style.display="none";
+                    document.getElementById("showselectphoto").style.display="block";
+                    document.getElementById("imname").textContent=cookitem[i][1][1][0].name;
+                    document.getElementById("ingredientlist").textContent=cookitem[i][1][1][0].ingredients;
+                    document.getElementById("instructionlist").textContent=cookitem[i][1][1][0].instruction;
+                })
+            } else{
+                imgstoreid=`img${i}${j}`;
+                console.log(imgstoreid);
+
+                document.getElementById(imgstoreid).src=cookitem[0][0][0][0].itemimg;
+                console.log("enter here heere")
+                document.getElementById(imgstoreid).addEventListener("click",()=>{
+                    document.getElementById("im").src=cookitem[i][0][0][0].itemimg;
+                    document.getElementById("recipespup").style.display="none";
+                    document.getElementById("showselectphoto").style.display="block";
+                    document.getElementById("imname").textContent=cookitem[i][0][0][0].name;
+                    document.getElementById("ingredientlist").textContent=cookitem[i][0][0][0].ingredients;
+                    document.getElementById("instructionlist").textContent=cookitem[i][0][0][0].instruction;
+                })
+            }
+            console.log("enteer here")
+        }
+        // document.getElementById(`${i}${j}`)=cookitem[0][0][0][0].itemimg;
+
+        
+        
+    }
+}
+addrecipesphoto()
 
 
 
